@@ -1,0 +1,9 @@
+venv/
+static/
+services/__pycache__
+services/instance
+services/dist
+.idea/
+__pycache__/
+instance/
+requirements.txt
