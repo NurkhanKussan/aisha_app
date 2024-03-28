@@ -1,0 +1,445 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+       
+}
+
+body {
+    background-image: url('/static/img/main_fon.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(52, 58, 64, 0.267); /* Задаем прозрачный цвет фона */
+    color: #fff;
+    padding: 10px 0; /* Уменьшаем верхний и нижний отступ */
+    border-bottom: 4px solid #f7af4b;
+    text-align: center;
+}
+
+
+.logo_text {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo_header {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px; /* Увеличим отступ сверху */
+    margin-bottom: 10px;
+}
+
+.main_menu li {
+    margin: 0 20px; /* Увеличим отступы между кнопками */
+}
+
+.main_menu li a {
+    font-size: 20px; /* Увеличим размер шрифта */
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px; /* Увеличим отступы внутри кнопок */
+    border-radius: 30px; /* Увеличим радиус скругления углов */
+    background-color: #f7af4b;
+    transition: background-color 0.3s ease;
+}
+
+.main_menu li a:hover {
+    background-color: #e5993e; /* Изменение цвета фона при наведении курсора */
+}
+
+
+footer {
+    background-color: rgba(52, 58, 64, 0.267);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section_title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.section_content {
+    line-height: 1.8;
+}
+
+.section_content p {
+    margin-bottom: 20px;
+}
+
+
+.form-contact {
+    max-width: 500px; /* Увеличим максимальную ширину формы */
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Светлый фон */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятия формы */
+}
+
+.form-contact h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333; /* Черный цвет текста */
+    font-size: 30px; /* Увеличим размер шрифта заголовка */
+}
+
+.form-contact label {
+    display: block;
+    font-weight: bold;
+    color: #555; /* Серый цвет текста меток */
+    margin-bottom: 10px; /* Увеличим отступ между метками и полями ввода */
+}
+
+.form-contact input[type="text"],
+.form-contact input[type="password"] {
+    width: 100%;
+    padding: 15px; /* Увеличим отступ внутри полей ввода */
+    margin-bottom: 25px;
+    border: none; /* Уберем границу */
+    border-radius: 5px; /* Сделаем поля ввода слегка скругленными */
+    background-color: #f5f5f5; /* Светло-серый фон */
+    font-size: 16px; /* Увеличим размер шрифта */
+}
+
+.form-contact input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7af4b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Увеличим размер шрифта */
+}
+
+.form-contact input[type="submit"]:hover {
+    background-color: #e6993e; /* Изменение цвета кнопки при наведении */
+}
+
+/* Добавим анимацию при фокусе на полях ввода */
+.form-contact input[type="text"]:focus,
+.form-contact input[type="password"]:focus {
+    background-color: #e8e8e8; /* Изменение цвета фона при фокусе */
+    transition: background-color 0.3s;
+}
+
+/* Стили для секции */
+#home {
+    max-width: 1200px; /* Максимальная ширина секции */
+    margin: auto; /* Выравнивание по центру */
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(248, 249, 250, 0.7); /* Прозрачный цвет фона */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #343a40;
+}
+/* Стили для формы */
+#home form {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Стили для формы */
+#home form {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#home form .name,
+#home form .content {
+    margin-bottom: 20px;
+}
+
+#home form input[type="text"],
+#home form textarea {
+    width: calc(100% - 20px); /* Уменьшим ширину поля ввода, чтобы сделать место для рамки */
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none; /* Убираем контур фокуса */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+#home form textarea {
+    height: 150px; /* Увеличим высоту текстового поля */
+}
+
+#home form button[type="submit"] {
+    width: 200px; /* Фиксированная ширина кнопки */
+    padding: 15px;
+    background-color: #f7af4b;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    outline: none; /* Убираем контур фокуса */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+#home form button[type="submit"]:hover {
+    background-color: #e6993e;
+}
+
+/* Стили для сообщений о флеш-сообщениях */
+#home .flash {
+    margin-top: 30px;
+}
+
+#home .flash p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #007bff; /* Цвет текста сообщений */
+}
+
+/* Стили для заголовка */
+/* #home h1 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #343a40;
+    text-transform: uppercase; Приведение к верхнему регистру */
+}
+
+/* Стили для блока с отзывом */
+.otziv {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовка отзыва */
+.title_otziv {
+    margin-bottom: 15px;
+}
+
+.title_otziv h4 {
+    color: #007bff;
+    font-size: 24px;
+}
+
+/* Стили для текста отзыва */
+.text_otziv h5 {
+    color: #343a40;
+    font-size: 18px;
+}
+
+/* Стили для имени автора */
+.otziv .title_otziv h4 {
+    color: #ff5733; /* Изменение цвета имени автора */
+}
+
+.HH1 {
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px; /* Расстояние между строками */
+    margin-top: 100px;
+}
+
+.image-container {
+    width: 12%; /* Ширина контейнера с изображением */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-right: 5px; /* Уменьшаем расстояние между изображениями */
+}
+
+
+.gallery-image {
+    width: 100%; /* Ширина изображения внутри контейнера */
+    border-radius: 10px; /* Закругление углов изображений */
+    margin-bottom: 5px; /* Расстояние между изображениями */
+}
+
+.image-caption {
+    font-size: 14px; /* Размер шрифта подписи */
+    color: #333; /* Цвет текста подписи */
+}
+
+.logo_index {
+    width: 160px;
+    height: 120px;
+    display: block; /* Сделать изображение блочным элементом */
+    margin: 110px 820px 0px 220px ; /* Установить отступ сверху и снизу в 10 пикселей и автоматический отступ слева и справа для центрирования */
+    padding: 0px;
+}
+.rectangle {
+    font-size: 40px;
+    display: block;
+    border: 2px solid #21201f; /* Устанавливаем толщину и цвет границы */
+    border-radius: 0 50px 50px 50px; /* Закругляем только правый нижний угол */
+    margin-top: 0px; /* Отступ сверху */
+    margin-left: auto; /* Выравнивание по центру по горизонтали */
+    margin-right: auto; /* Выравнивание по центру по горизонтали */
+    margin-bottom: 100px;
+    padding: 10px; 
+    background-color: #f8f9fa; /* Цвет фона */
+    width: fit-content;
+}
+
+.main_text {
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.short_text {
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+
+.fon2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+.music {
+    border: 1px solid #21201f; /* Устанавливаем толщину и цвет границы */
+    border-radius: 0 40px 40px 40px;
+    background-color: rgba(248, 249, 250, 0.464);; 
+    padding: 10px;
+    height: 30px;;
+    width: fit-content;
+}
+
+.music_on {
+    border: 1px solid #21201f; /* Устанавливаем толщину и цвет границы */
+    border-radius: 0 40px 40px 40px;
+    background-color: #f5f1ed; 
+    padding: 10px;
+    height: 30px;;
+    width: fit-content;
+}
+
+/* Стили для секции "О нас" */
+#home {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.tg-logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tg-logo:hover {
+    transform: scale(1.2); /* Увеличение на 20% */
+}
+
+#home ul, #home ol {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    list-style-type: none; /* Убираем стандартный маркер списка */
+    text-align: left;
+}
+
+#home li {
+    margin-bottom: 10px;
+    padding-left: 20px; /* Добавляем отступ слева для кастомного маркера */
+    position: relative;
+}
+
+#home li:before {
+    content: "\2022"; /* Заменяем стандартный маркер на кружок */
+    color: #f7af4b; /* Цвет кружка */
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}

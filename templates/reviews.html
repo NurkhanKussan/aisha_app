@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block section %}
+<section id="home">
+    <div class="form-contact">
+        <h2>Отзывы и пожелания</h2>
+        <form method="post">
+            <div class="name"><input type="text" name="name" placeholder="Ваше имя"></div>
+            <div class="content"><textarea type="text" name="content" cols="30" rows="5" placeholder="Напишите что-нибудь"></textarea></div>
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="flash">
+            {% for msg in get_flashed_messages() %}
+            <p>{{msg}}</p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="HH1"><h1>Оставленные отзывы</h1></div>
+    {% for review in reviews %}
+    <div class="otziv">
+        <div class="title_otziv">
+            <h4>Автор: {{review.title}}</h4>
+        </div>
+        <div class="text_otziv">
+            <p>{{review.content}}</p>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}

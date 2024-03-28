@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <title>{{title}}</title>
+</head>
+<body>
+    <main class="container">
+    <header><span>
+        <img src="/static/img/Лого_header.png" alt="" class="logo_header" height="100" width="200"><span class="logo_text">Твой голосовой ассистент</span>
+        </span>
+        <nav>
+            <ul class="main_menu">
+                <li class="glavnaya"><a href="{{url_for('index')}}">Главная</a></li>
+                <li class="O_nas"><a href="{{url_for('about')}}">О нас</a></li>
+                <li class="telegram"><a href="{{url_for('telegram')}}">Телеграм бот</a></li>
+                <li class="Ostavit_otziv"><a href="{{url_for('reviews')}}">Отзывы</a></li>
+                <li class="register"><a href="{{url_for('register')}}">Регистрация</a></li>
+                <li class="register"><a href="{{url_for('download')}}">Скачивания</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+   
+        {% block section %}
+
+        {% endblock %}
+       
+    <footer>
+        <p>&copy; 2024 Kokshelab. Все права защищены.</p>
+    </footer>
+</main>
+</body>
+</html>
